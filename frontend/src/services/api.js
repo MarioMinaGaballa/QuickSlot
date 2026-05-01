@@ -7,3 +7,4 @@ const API = axios.create({
 
 export const signUp = (userDataSignUp) => API.post('/users/signup', userDataSignUp);
 export const login = (userDataLogin) => API.post('/users/login', userDataLogin);
+export const forgotPassword = (email) => API.post('/users/forgotPassword', { Email: email });

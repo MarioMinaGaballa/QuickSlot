@@ -29,6 +29,9 @@ const Login = () => {
             alert(err.response?.data?.error || "Invalid email or password");
         }
     };
+    const handleSend = () => {
+        navigate('/resetPassword');
+    }
 
     return (
         <div className="min-h-screen bg-gray-50 flex flex-col justify-center py-12 sm:px-6 lg:px-8">
@@ -77,7 +80,16 @@ const Login = () => {
                         >
                             Login
                         </button>
+
+                    
                     </form>
+                    <br />
+                        <button  onClick={handleSend}
+                            type="button"
+                            className="flex justify-center py-2 px-4 border border-transparent rounded-md shadow-sm text-sm font-medium text-white bg-indigo-300 hover:bg-indigo-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition duration-150"
+                        >
+                            Forgot password
+                        </button>
                 </div>
             </div>
         </div>
