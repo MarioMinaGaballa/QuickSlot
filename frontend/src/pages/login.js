@@ -30,7 +30,7 @@ const Login = () => {
         }
     };
     const handleSend = () => {
-        navigate('/resetPassword');
+        navigate('/forgotPassword');
     }
 
     return (
