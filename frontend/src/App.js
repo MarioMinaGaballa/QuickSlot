@@ -5,11 +5,12 @@ import SignUp from './pages/signUp';     // اتأكد إن الاسم مطاب�
 import Login from './pages/login';
 import ForgotPassword from './pages/forgotpassword';
 import ResetPassword from './pages/resetpassword';
+import Profile from './components/profile';
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-gray-50">
+      <div className="min-h-screen bg-gray-900">
         <NavBar />
         <Routes>
           <Route path="/" element={<div className="text-center mt-20 text-2xl">Welcome to QuickSlot</div>} />
@@ -17,6 +18,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/forgotPassword" element={<ForgotPassword />} />
           <Route path="/resetPassword/:token" element={<ResetPassword />} />
+          <Route path="/profile" element={<Profile />} />
         </Routes>
       </div>
     </BrowserRouter>
