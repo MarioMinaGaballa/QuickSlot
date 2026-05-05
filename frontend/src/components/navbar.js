@@ -27,6 +27,7 @@ export default function NavBar() {
       : [
           { name: 'Dashboard', href: '/dashboard' },
           { name: 'Manage Slots', href: '/slots' },
+          { name: 'Add Availability', href: '/addAvailability' },
         ];
 
   const handleSignOut = () => {

@@ -6,6 +6,7 @@ import Login from './pages/login';
 import ForgotPassword from './pages/forgotpassword';
 import ResetPassword from './pages/resetpassword';
 import Profile from './components/profile';
+import AddAvailability from './pages/Availability';
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="/forgotPassword" element={<ForgotPassword />} />
           <Route path="/resetPassword/:token" element={<ResetPassword />} />
           <Route path="/profile" element={<Profile />} />
+          <Route path="/addAvailability" element={<AddAvailability />} />
         </Routes>
       </div>
     </BrowserRouter>
